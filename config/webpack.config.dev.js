@@ -1,5 +1,6 @@
+const path = require('path')
 const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+//const HtmlWebpackPlugin = require('html-webpack-plugin')
 const baseConfig = require('./webpack.config.base')
 
 module.exports = Object.assign({
@@ -15,9 +16,13 @@ module.exports = Object.assign({
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'templates/index.html',
-      filename: 'index.html'
-    })
-  ]
+    // new HtmlWebpackPlugin({
+    //   template: 'templates/index.html',
+    //   filename: 'index.html'
+    // })
+  ],
+  devServer: {
+    contentBase: './dist/',
+    publicPath: './dist/'
+  }
 }, baseConfig)
