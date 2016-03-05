@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server -c ./config/webpack.config.dev.js",
+    "bundle": "webpack -c ./config/webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
