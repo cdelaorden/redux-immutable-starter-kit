@@ -6,10 +6,10 @@ Just a quick starter-kit to start up a new project with React and Redux and all 
 ## Usage
 Copy or clone everything in this repo. You only have a React component in `./src/containers/app` mounted to check everything works fine.
 
-HTML template and bundleded app located at `./dist`
+HTML template and eventually production bundle located at `./dist`
 
 ## Tasks
-- `npm start` to launch your dev server with hot reloading
+- `npm start` to launch your dev server with hot reloading at `localhost:3000`
 - `npm run build` to generate your bundle for production
 
 Happy reducing!
