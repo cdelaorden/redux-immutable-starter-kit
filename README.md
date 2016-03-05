@@ -9,7 +9,7 @@ Copy or clone everything in this repo. You only have a React component in `./src
 HTML template and bundleded app located at `./dist`
 
 ## Tasks
-    - `npm start` to launch your dev server with hot reloading
-    - `npm run build` to generate your bundle for production
+- `npm start` to launch your dev server with hot reloading
+- `npm run build` to generate your bundle for production
 
 Happy reducing!
