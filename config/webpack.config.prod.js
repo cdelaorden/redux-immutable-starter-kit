@@ -1,5 +1,4 @@
 const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const baseConfig = require('./webpack.config.base')
 
 module.exports = Object.assign({
@@ -17,10 +16,6 @@ module.exports = Object.assign({
     new webpack.optimize.UglifyJsPlugin({
       compress: true,
       acorn: true
-    }),
-    new HtmlWebpackPlugin({
-      template: 'templates/index.html',
-      filename: '../main.html'
     })
   ]
 }, baseConfig)

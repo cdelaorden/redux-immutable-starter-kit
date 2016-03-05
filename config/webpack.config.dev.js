@@ -9,7 +9,13 @@ module.exports = Object.assign({
     'webpack-hot-middleware/client',
     './src/index'
   ],
+  output: {
+    path: path.join(__dirname, '../dist'),
+    filename: 'bundle.js',
+    publicPath: '/static/'
+  },
   plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
       __DEV__: true,
       'process.env': { NODE_ENV: '"development"' }
@@ -20,9 +26,5 @@ module.exports = Object.assign({
     //   template: 'templates/index.html',
     //   filename: 'index.html'
     // })
-  ],
-  devServer: {
-    contentBase: './dist/',
-    publicPath: './dist/'
-  }
+  ]
 }, baseConfig)

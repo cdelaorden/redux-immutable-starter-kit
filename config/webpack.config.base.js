@@ -3,10 +3,9 @@ const path = require('path')
 module.exports = {
   name: 'redux-base-app',
   output: {
-    path: path.join(__dirname, '../dist/js'),
-    filename: 'bundle.[hash:6].js',
-    publicPath: '/js/',
-    hash: true
+    path: path.join(__dirname, '../dist'),
+    filename: 'bundle.js',
+    publicPath: '/static/',
   },
   module: {
     loaders: [
