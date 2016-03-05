@@ -9,11 +9,6 @@ module.exports = Object.assign({
     'webpack-hot-middleware/client',
     './src/index'
   ],
-  output: {
-    path: path.join(__dirname, '../dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
-  },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
@@ -21,10 +16,6 @@ module.exports = Object.assign({
       'process.env': { NODE_ENV: '"development"' }
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    // new HtmlWebpackPlugin({
-    //   template: 'templates/index.html',
-    //   filename: 'index.html'
-    // })
+    new webpack.NoErrorsPlugin()
   ]
 }, baseConfig)

@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  name: 'redux-base-app',
+  name: 'redux starter kit',
   output: {
     path: path.join(__dirname, '../dist'),
     filename: 'bundle.js',
