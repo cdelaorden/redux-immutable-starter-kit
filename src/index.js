@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-import { Map } from 'immutable'
+import App from './containers/app'
 
-let text = 'caca gorda!'
-alert(`${text}`)
+
+
+ReactDOM.render(<App />, document.getElementById('app'))
