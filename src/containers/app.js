@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class App extends Component {
   render(){
-    return <h1>React is ready to rock and roll!</h1>
+    return <h1>React is ready to rumble!</h1>
   }
 }
 
